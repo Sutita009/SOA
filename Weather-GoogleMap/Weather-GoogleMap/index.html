@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API Mashup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <center><h1>Weather Mashup with Google Map</h1></center><br>
+    <p><h2>กดค้นหา</h2></p>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+
+    <div class="weather">
+        <div class="name"></div>
+        <div class="weatherMain"></div>
+        <div class="temp"></div>
+        <div class="pressure"></div>
+        <div class="humidity"></div>
+    </div>
+
+
+    
+
+
+
+
+    <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC52-cwli-n_-dJJqxpf20ld75mTdD3Srw&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="https://apis.google.com/js/client.js?onload=onLoadCallback"></script>
+
+</body>
+
+</html>
